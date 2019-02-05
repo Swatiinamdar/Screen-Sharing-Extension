@@ -1,0 +1,29 @@
+{
+  "name" : "Tavvy Screen Sharing",
+  "author": "tavvy.com",
+  "version" : "1.0",
+  "manifest_version" : 2,
+  "minimum_chrome_version": "34",
+  "description" : "This Chrome extension is developed primary for http://tavvy.com/. It enables screen sharing during tavvy video session",
+  "homepage_url": "http://tavvy.com/",
+  "background": {
+    "scripts": ["background-script.js"],
+    "persistent": false
+  },
+  "externally_connectable": {
+    "matches": [
+      "https://tavvy.com/app"
+    ]
+  },
+  "icons": {
+    "16": "tavvylogo.png",
+    "48": "tavvylogo.png",
+    "128": "tavvylogo.png"
+  },
+  "permissions": [
+    "desktopCapture"
+  ],
+  "web_accessible_resources": [
+    "tavvylogo.png"
+  ]
+}
